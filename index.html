@@ -1,0 +1,854 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Work Field - Corporate Category Bootstrap Responsive Web Template - Home : W3Layouts</title>
+    <!-- Template CSS Style link -->
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+
+</head>
+
+<body>
+    <!-- header -->
+    <header id="site-header" class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <img src="assets/images/zlogo.png" alt="zenith logo" width="70" height="60">
+                <a class="navbar-brand" href="index.html">
+                    ZenITH <span>Association</span>
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#team">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                       
+                    </ul>
+                    <li>
+                    <!-- HTML !-->
+
+<a class="button-51" href="#contact">Contact</a>
+<style>
+.button-51 {
+  background-color: transparent;
+  border: 1px solid #1765b3;
+  box-sizing: border-box;
+  color: #00132C;
+  font-family: "Avenir Next LT W01 Bold",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 16px 23px;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-51:hover,
+.button-51:active {
+  outline: 0;
+}
+
+.button-51:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button-51:before {
+  background-color: #97d7ee;
+  content: "";
+  height: calc(100% + 3px);
+  position: absolute;
+  right: -7px;
+  top: -9px;
+  transition: background-color 300ms ease-in;
+  width: 100%;
+  z-index: -1;
+}
+
+.button-51:hover:before {
+  background-color: #45bff0;
+}
+
+@media (min-width: 768px) {
+  .button-51 {
+    padding: 16px 32px;
+  }
+}
+                    </style>
+                </div>
+              
+            </nav>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <!-- hero slider Start -->
+    <div class="banner-wrap">
+        <div class="row m-0">
+            <div class="col-md-6 banner-left pt-md-0 pt-5 pb-md-0 pb-sm-4">
+                <div class="container pt-md-0 pt-5">
+                    <div class="banner-info ps-xxl-5 ps-xl-0 ps-5 ms-lg-5 py-md-0 py-5">
+                       
+                        <h3>Welcome to ZenITH </h3>
+                        <h3>Association</h3>
+
+<!------------------------------TEXT ANIMATION---------------------------------------------------------------------------------------------------------------------->
+                        <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
+                        <style>
+                        @import url(https://fonts.googleapis.com/css?family=Khula:700);
+                       
+                        .hidden {
+                        opacity:0;
+                        }
+                        .console-container {
+                        font-family:Khula;
+                        font-size: 36px;
+                        height:100px;
+                        width:425px;
+                        display:block;
+                        color:white;
+                        top:0;
+                        bottom:0;
+                        left:0;
+                        right:0;
+                       
+                        }
+                        .console-underscore {
+                        display:inline-block;
+                        position:relative;
+                        top:-0.14em;
+                        left:10px;
+                        }
+                        </style>
+                            
+                        <script>
+                        // function([string1, string2],target id,[color1,color2])    
+                        consoleText(['Tech savvy community', 'Enhancing Technical Skills'], 'text',['white','white']);
+
+                        function consoleText(words, id, colors) {
+                        if (colors === undefined) colors = ['#fff'];
+                        var visible = true;
+                        var con = document.getElementById('console');
+                        var letterCount = 1;
+                        var x = 1;
+                        var waiting = false;
+                        var target = document.getElementById(id)
+                        target.setAttribute('style', 'color:' + colors[0])
+                        window.setInterval(function() {
+
+                            if (letterCount === 0 && waiting === false) {
+                            waiting = true;
+                            target.innerHTML = words[0].substring(0, letterCount)
+                            window.setTimeout(function() {
+                                var usedColor = colors.shift();
+                                colors.push(usedColor);
+                                var usedWord = words.shift();
+                                words.push(usedWord);
+                                x = 1;
+                                target.setAttribute('style', 'color:' + colors[0])
+                                letterCount += x;
+                                waiting = false;
+                            }, 1000)
+                            } else if (letterCount === words[0].length + 1 && waiting === false) {
+                            waiting = true;
+                            window.setTimeout(function() {
+                                x = -1;
+                                letterCount += x;
+                                waiting = false;
+                            }, 1000)
+                            } else if (waiting === false) {
+                            target.innerHTML = words[0].substring(0, letterCount)
+                            letterCount += x;
+                            }
+                        }, 120)
+                        window.setInterval(function() {
+                            if (visible === true) {
+                            con.className = 'console-underscore hidden'
+                            visible = false;
+
+                            } else {
+                            con.className = 'console-underscore'
+
+                            visible = true;
+                            }
+                        }, 400)
+                        }
+                        </script>
+<!------------------------------//TEXT ANIMATION---------------------------------------------------------------------------------------------------------------------->
+
+                        <a class="btn btn-style btn-style-2 mt-sm-5 mt-4" href="https://www.instagram.com/zenith_pvgcoe/?hl=en" target="_blank">Join US</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 banner-right">
+                <div class="text-center py-5">
+                    <a href="#small-dialog" class="popup-with-zoom-anim play-view text-center">
+                        
+                    </a>
+                    <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+                    <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+                        <iframe src="" frameborder="0"
+                            allow="autoplay; fullscreen" allowfullscreen></iframe>
+                    </div>
+                    <!--//video-->
+                </div>
+            </div>
+        </div>
+        <div class="shape">
+            <svg xmlns="" viewBox="0 0 1440 280">
+                <path fill-opacity="1">
+                    <animate attributeName="d" dur="20000ms" repeatCount="indefinite"
+                        values="M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z; M0,160L48,181.3C96,203,192,245,288,234.7C384,224,480,160,576,133.3C672,107,768,117,864,138.7C960,160,1056,192,1152,197.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;												 M0,64L48,74.7C96,85,192,107,288,133.3C384,160,480,192,576,170.7C672,149,768,75,864,80C960,85,1056,171,1152,181.3C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
+                                                 M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;" />
+
+                </path>
+            </svg>
+        </div>
+    </div>
+    <!-- hero slider end -->
+
+
+<!-- --------------------------------------------------content with bg -------------------------------------------------------------------------------------------------------------------->
+<section class="w3l-content-bg" id="about">
+    <div class="container py-md-5 py-4">
+        <div class="row py-5">
+            <div class="col-md-7">
+                <div class="left-content-bg">
+                    <p class="text-tag">About ZenITH</p>
+                    <h4 class="text-head-content">Tech Enthusiasts Unleashing Tomorrow's Wonders</h4>
+                    <a class="btn btn-style mt-4" href="https://www.pvgcoenashik.org/information-technology-department/" target="_blank">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //content with bg -->
+<style>
+    /* content with bg */
+.w3l-content-bg {
+  background: url(assets/images/bg.jpg) no-repeat center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.w3l-content-bg::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(8 8 8 / 10%);
+  z-index: -1;
+}
+
+h4.text-head-content {
+  font-size: 45px;
+  line-height: 55px;
+  color: #212529;
+  margin: 20px 0;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.w3l-content-bg p.text-tag {
+  color: #212529;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+@media (max-width: 1080px) {
+  h4.text-head-content {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 991px) {
+  h4.text-head-content {
+    font-size: 35px;
+    line-height: 45px;
+  }
+}
+
+@media (max-width: 414px) {
+  h4.text-head-content {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+/* -------------------------//content with bg -----------------------------------------------------------------------------------------------------------------------------------------*/
+</style>
+
+
+ <!-- image with text section -->
+ <section class="w3l-text-6 py-5">
+    <div class="container pb-md-5 pb-4">
+        <div class="row top-cont-grid align-items-center">
+            <div class="col-lg-5">
+                <div class="">
+                    <img src="assets/images/HODIT.jpeg" alt="" class="img-fluid" />
+                </div>
+            </div>
+            <div class="col-lg-1">
+
+            </div>
+            <div class="col-lg-6 mt-lg-0 mt-sm-5 mt-4">
+                <div class="left-cont">
+                    <h3 class="title-style">IT Department Head</h3>
+                    <h4>Prof. Satish N. Bhadane</h4>
+                    <p class="mt-3 mb-2">Our department plays a pivotal role in shaping the future of information technology, 
+                        and I am honored to lead a team of dedicated professionals. Together, we will strive for excellence in research, 
+                        education, and practical application of cutting-edge technologies.</p>
+                    <a href="https://www.pvgcoenashik.org/information-technology-department/ " target="_blank"class="btn btn-style mt-4" id="team">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--------------------------------------------------- image with text section -------------------------------------------------------------------------------------------------------------->
+<link rel="stylesheet" href="assets/css/style-slider.css">
+<!--//news-grids-->
+<section class="w3l-news-sec" >
+      <div class="container text-center py-lg-3">
+        <div class="title-content text-center mb-lg-5 mb-4">
+          <h3 class="sub-titlehny">Zenith</h3>
+          <h1 class="hny-title">
+            Members</h1>
+          <div class="separatorhny"></div>
+        </div>
+      </div>
+      <div class="owl-news owl-carousel owl-theme">
+        <div class="item">
+            <div class="news-img">
+              <a href="assets/images/Ashish.jpg" data-lightbox="example-set" data-title="Social media coordinator ZENITH" >
+              <img class="card-img-bottom d-block" src="assets/images/Ashish.jpg" class="img-fluid" alt="news image"></a>
+              <div class="title-wrap">   
+                <a href="#team">
+                  <h4 class="title">President of Zenith Association</h4>
+                </a>
+               
+              </div>
+            </div>
+          </div>
+        
+        <div class="item">
+            <div class="news-img">
+              <a href="assets/images/Ashish.jpg" data-lightbox="example-set" data-title="Project 3">
+              <img class="card-img-bottom d-block" src="assets/images/Ashish.jpg" class="img-fluid" alt="news image"></a>
+              <div class="title-wrap">     
+                <a href="#">
+                  <h4 class="title">Cardiac Clinic</h4>
+                </a>
+                <a href="#" class="text-right"><span class="fa fa-arrow-right"></span></a>
+              </div>
+            </div>
+          </div>
+
+        <div class="item">
+            <div class="news-img">
+              <a href="assets/images/Ashish.jpg" data-lightbox="example-set" data-title="Project 3">
+              <img class="card-img-bottom d-block" src="assets/images/Ashish.jpg" class="img-fluid" alt="news image"></a>
+              <div class="title-wrap">     
+                <a href="#">
+                  <h4 class="title">Cardiac Clinic</h4>
+                </a>
+                <a href="#" class="text-right"><span class="fa fa-arrow-right"></span></a>
+              </div>
+            </div>
+          </div>
+
+        <div class="item">
+            <div class="news-img">
+              <a href="assets/images/Ashish.jpg" data-lightbox="example-set" data-title="Project 3">
+              <img class="card-img-bottom d-block" src="assets/images/Ashish.jpg" class="img-fluid" alt="news image"></a>
+              <div class="title-wrap">     
+                <a href="#">
+                  <h4 class="title">Cardiac Clinic</h4>
+                </a>
+                <a href="#" class="text-right"><span class="fa fa-arrow-right"></span></a>
+              </div>
+            </div>
+          </div>
+
+
+        <div class="item">
+          <div class="news-img">
+            <a href="assets/images/Ashish.jpg" data-lightbox="example-set" data-title="Project 3">
+            <img class="card-img-bottom d-block" src="assets/images/Ashish.jpg" class="img-fluid" alt="news image"></a>
+            <div class="title-wrap">     
+              <a href="#">
+                <h4 class="title">Cardiac Clinic</h4>
+              </a>
+              <a href="#" class="text-right"><span class="fa fa-arrow-right"></span></a>
+            </div>
+          </div>
+        </div>
+       
+
+
+        <div class="item">
+            <div class="news-img">
+              <a href="assets/images/Ashish.jpg" data-lightbox="example-set" data-title="Project 3">
+              <img class="card-img-bottom d-block" src="assets/images/Ashish.jpg" class="img-fluid" alt="news image"></a>
+              <div class="title-wrap">     
+                <a href="#">
+                  <h4 class="title">Cardiac Clinic</h4>
+                </a>
+                <a href="#" class="text-right"><span class="fa fa-arrow-right"></span></a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <script src="assets/js/lightbox-plus-jquery.min.js"></script>
+  </section>
+  <!--//news-grids------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- libhtbox -->
+  <script src="js/owl.carousel.js"></script>
+  <!-- script for banner slider-->
+  <script>
+    $(document).ready(function () {
+      $('.owl-news').owlCarousel({
+        stagePadding: 200,
+        loop: true,
+        margin: 30,
+        nav: false,
+        responsiveClass: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplaySpeed: 1000,
+        autoplayHoverPause: false,
+        responsive: {
+          0: {
+            items: 1,
+            stagePadding: 40,
+            nav: false
+          },
+          480: {
+            items: 1,
+            stagePadding: 40,
+            nav: true
+          },
+          667: {
+            items: 2,
+            stagePadding: 50,
+            nav: true
+          },
+          1000: {
+            items: 2,
+            nav: true
+          }
+        }
+      })
+    })
+  </script>
+<!-- script for banner slider---------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+    <br><br>
+
+    <!-- testimonial section -->
+    <section class="testimonial-area pt-5" id="testimonials">
+        <div class="container pt-md-5 pt-4">
+            <div class="title-heading-w3 text-center mx-auto mb-sm-5 mb-4" style="max-width:500px;">
+                <h3 class="title-style">Support Staff</h3>
+            </div>
+            <div class="testi-wrap">
+                <div class="client-single active position-1" data-position="position-1">
+                    <div class="client-img">
+                        <img src="assets/images/HODIT_.jpeg" alt="" />
+                    </div>
+                    <div class="client-info">
+                        <h3>Prof.Satish N. Bhadane</h3>
+                        <p>Head of Department</p>
+                    </div>
+                    <div class="client-comment">
+                        <h3>To educate, inspire, and equip the next generation of IoT professionals through innovative 
+                            teaching, cutting-edge research, and the dissemination of knowledge. Our mission is to instill 
+                            a deep understanding of IoT principles, technologies, and applications, fostering a community of 
+                            learners </h3>
+                        <img src="assets/images/quote.png" alt="" />
+                    </div>
+                </div>
+
+                <div class="client-single inactive position-7" data-position="position-7">
+                    <div class="client-img">
+                        <img src="assets/images/SYB.jpg" alt="" />
+                    </div>
+                    <div class="client-info">
+                        <h3>Dr. Sonal Y. Borase</h3>
+                        <p>Assistant Professor</p>
+                    </div>
+                    <div class="client-comment">
+                        <h3>To advance the frontier of knowledge in Artificial Neural Networks and Image
+                             Processing through cutting-edge research, fostering a dynamic learning environment,
+                              and contributing to the development of innovative solutions. </h3>
+                        <img src="assets/images/quote.png" alt="" />
+                    </div>
+                </div>
+
+                <div class="client-single inactive position-2" data-position="position-2">
+                    <div class="client-img">
+                        <img src="assets/images/ASP.jpg" alt="" />
+                    </div>
+                    <div class="client-info">
+                        <h3>Prof. Arati S. Pingle</h3>
+                        <p>Assistant Professor</p>
+                    </div>
+                    <div class="client-comment">
+                        <h3>To inspire and educate the next generation of engineers and innovators in the 
+                            fields of Microcontroller and Internet of Things. Our mission is to cultivate a
+                             dynamic learning environment that fosters curiosity, critical thinking, and 
+                             hands-on experience. </h3>
+                        <img src="assets/images/quote.png" alt="" />
+                    </div>
+                </div>
+
+                <div class="client-single inactive position-3" data-position="position-3">
+                    <div class="client-img">
+                        <img src="assets/images/DAS.jpg" alt="" />
+                    </div>
+                    <div class="client-info">
+                        <h3>Prof. Dipali A. Shinde</h3>
+                        <p>Assistant Professor</p>
+                    </div>
+                    <div class="client-comment">
+                        <h3>To cultivate a dynamic learning environment that fosters a deep understanding of 
+                            Computer Networks & Information Security, Operating Systems, and related 
+                            technologies. </h3>
+                        <img src="assets/images/quote.png" alt="" />
+                    </div>
+                </div>
+
+                <div class="client-single inactive position-4" data-position="position-4">
+                    <div class="client-img">
+                        <img src="assets/images/PAL.jpg" alt="" />
+                    </div>
+                    <div class="client-info">
+                        <h3>Prof. Prasad A. Lahare</h3>
+                        <p>Assistant Professor</p>
+                    </div>
+                    <div class="client-comment">
+                        <h3>To inspire and educate the next generation of computer scientists by imparting 
+                            in-depth knowledge and fostering a deep understanding of Discrete Mathematics, 
+                            Cloud Computing, Data Structures, and Algorithms.</h3>
+                        <img src="assets/images/quote.png" alt="" />
+                    </div>
+                </div>
+
+                <div class="client-single inactive position-5" data-position="position-5">
+                    <div class="client-img">
+                        <img src="assets/images/PAS.jpg" alt="" />
+                    </div>
+                    <div class="client-info">
+                        <h3>Prof. Pranali A. Shinde</h3>
+                        <p>Assistant Professor</p>
+                    </div>
+                    <div class="client-comment">
+                        <h3>To educate, inspire, and empower the next generation of data professionals by 
+                            delivering unparalleled expertise in Big Data Analytics and Database Management 
+                            Systems. </h3>
+                        <img src="assets/images/quote.png" alt="" />
+                    </div>
+                </div>
+
+                <div class="client-single inactive position-6" data-position="position-6">
+                    <div class="client-img">
+                        <img src="assets/images/RMT.jpg" alt="" />
+                    </div>
+                    <div class="client-info">
+                        <h3>Prof. Rohini M. Thete</h3>
+                        <p>Assistant Professor</p>
+                    </div>
+                    <div class="client-comment">
+                        <h3>To educate and inspire the next generation of database professionals by providing 
+                            comprehensive and innovative instruction in Database Management Systems. </h3>
+                        <img src="assets/images/quote.png" alt="" />
+                    </div>
+                </div>
+
+
+                
+  
+                <div class="client-single inactive position-7" data-position="position-7">
+                    <div class="client-img">
+                        <img src="assets/images/SKT.jpg" alt="" />
+                    </div>
+                    <div class="client-info">
+                        <h3>Prof. Smita K. Thakare</h3>
+                        <p>Assistant Professor</p>
+                    </div>
+                    <div class="client-comment">
+                        <h3>To advance the frontiers of knowledge in Machine Learning and Data Science 
+                            through rigorous research, innovative methodologies, and collaborative exploration. </h3>
+                        <img src="assets/images/quote.png" alt="" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- //testimonial section -->
+
+    <!-- footer -->
+    <footer class="w3l-footer" >
+        <div class="shape-footer">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280">
+                <path fill-opacity="1">
+                    <animate attributeName="d" dur="20000ms" repeatCount="indefinite"
+                        values="M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z; M0,160L48,181.3C96,203,192,245,288,234.7C384,224,480,160,576,133.3C672,107,768,117,864,138.7C960,160,1056,192,1152,197.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;												 M0,64L48,74.7C96,85,192,107,288,133.3C384,160,480,192,576,170.7C672,149,768,75,864,80C960,85,1056,171,1152,181.3C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
+                                             M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;" />
+
+                </path>
+            </svg>
+        </div>
+        <div class="w3l-footer-16 py-5" id="contact">
+            <div class="container">
+                <div class="row footer-p">
+                    <div class="col-lg-4 pe-lg-5">
+                        <h3>Social Media</h3>
+                        <div class="columns-2 mt-4 pt-1">
+                            <ul class="social">
+                                <li><a href="#linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                </li>
+                                <li><a href="#twitter"><i class="fab fa-instagram"></i></a>
+                                </li>
+                                <li><a href="#google"><i class="fab fa-google-plus-g"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 mt-lg-0 mt-5">
+                        <div class="row">
+                            <div class="col-xl-5 col-6 column">
+                                <h3>Quick Link</h3>
+                                <ul class="footer-gd-16">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="#about">About us</a></li>
+                                    <li><a href="#team">Team</a></li>
+                                    <li><a href="#">Gallery</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6 column">
+                                <h3>Contact Info</h3>
+                                <ul class="footer-contact-list">
+                                   
+                                    <li class="mt-2"><a href="tel:+91 8459553669">+91 8459553669</a></li>
+                                    <li class="mt-2"><a href="mailto:zenithassociation5330@gmail.com">zenithassociation5330@gmail.com</a></li>
+                                    <li class="mt-2"><a href="mailto:www.pvgcoenashik.org">www.pvgcoenashik.org</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-7 col-sm-8 column mt-lg-0 mt-4 pl-xl-0">
+                        <h3>Newsletter </h3>
+                        <div class="end-column">
+                            <form action="#" class="subscribe" method="post">
+                                <input type="email" name="email" placeholder="Email Address" required="">
+                                <button><span class="fa fa-paper-plane" aria-hidden="true"></span></button>
+                            </form>
+                       
+                        </div>
+                    </div>
+                </div>
+                <div class="below-section text-center pt-lg-4 mt-5">
+                    <p class="copy-text">&copy; Work Field. Design by <a
+                            href="https://www.linkedin.com/in/ashish-patil-424629258/" target="_blank"> Ashish Patil</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- //footer -->
+
+    <!-- Js scripts -->
+    <!-- move top -->
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fas fa-level-up-alt" aria-hidden="true"></span>
+    </button>
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("movetop").style.display = "block";
+            } else {
+                document.getElementById("movetop").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!-- //move top -->
+
+    <!-- common jquery plugin -->
+    
+    <!-- //common jquery plugin -->
+
+    <!-- /counter-->
+    <script src="assets/js/counter.js"></script>
+    <!-- //counter-->
+
+    <!-- testimonial script -->
+    <script>
+        $(document).ready(function () {
+
+            $('.client-single').on('click', function (event) {
+                event.preventDefault();
+
+                var active = $(this).hasClass('active');
+
+                var parent = $(this).parents('.testi-wrap');
+
+                if (!active) {
+                    var activeBlock = parent.find('.client-single.active');
+
+                    var currentPos = $(this).attr('data-position');
+
+                    var newPos = activeBlock.attr('data-position');
+
+                    activeBlock.removeClass('active').removeClass(newPos).addClass('inactive').addClass(
+                        currentPos);
+                    activeBlock.attr('data-position', currentPos);
+
+                    $(this).addClass('active').removeClass('inactive').removeClass(currentPos).addClass(
+                        newPos);
+                    $(this).attr('data-position', newPos);
+
+                }
+            });
+
+        }(jQuery));
+    </script>
+    <!-- //testimonial script -->
+
+    <!-- magnific popup -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.popup-with-zoom-anim').magnificPopup({
+                type: 'inline',
+
+                fixedContentPos: false,
+                fixedBgPos: true,
+
+                overflowY: 'auto',
+
+                closeBtnInside: true,
+                preloader: false,
+
+                midClick: true,
+                removalDelay: 300,
+                mainClass: 'my-mfp-zoom-in'
+            });
+
+            $('.popup-with-move-anim').magnificPopup({
+                type: 'inline',
+
+                fixedContentPos: false,
+                fixedBgPos: true,
+
+                overflowY: 'auto',
+
+                closeBtnInside: true,
+                preloader: false,
+
+                midClick: true,
+                removalDelay: 300,
+                mainClass: 'my-mfp-slide-bottom'
+            });
+        });
+    </script>
+    <!-- //magnific popup -->
+
+    <!-- theme switch js (light and dark)-->
+    <script src="assets/js/theme-change.js"></script>
+    <!-- //theme switch js (light and dark)-->
+
+    <!-- MENU-JS -->
+    <script>
+        $(window).on("scroll", function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 80) {
+                $("#site-header").addClass("nav-fixed");
+            } else {
+                $("#site-header").removeClass("nav-fixed");
+            }
+        });
+
+        //Main navigation Active Class Add Remove
+        $(".navbar-toggler").on("click", function () {
+            $("header").toggleClass("active");
+        });
+        $(document).on("ready", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+            $(window).on("resize", function () {
+                if ($(window).width() > 991) {
+                    $("header").removeClass("active");
+                }
+            });
+        });
+    </script>
+    <!-- //MENU-JS -->
+
+    <!-- disable body scroll which navbar is in active -->
+    <script>
+        $(function () {
+            $('.navbar-toggler').click(function () {
+                $('body').toggleClass('noscroll');
+            })
+        });
+    </script>
+    <!-- //disable body scroll which navbar is in active -->
+
+    <!-- bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- //bootstrap -->
+    <!-- //Js scripts -->
+</body>
+
+</html>
